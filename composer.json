@@ -1,0 +1,24 @@
+{
+    "name": "launchdarkly/server-sdk-redis-predis",
+    "description": "LaunchDarkly PHP SDK Redis integration using the predis package",
+    "keywords": [
+        "launchdarkly",
+        "launchdarkly php"
+    ],
+    "homepage": "https://github.com/launchdarkly/php-server-sdk-redis-predis",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "LaunchDarkly <sdks@launchdarkly.com>",
+            "homepage": "http://www.launchdarkly.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "predis/predis": "^1",
+        "launchdarkly/server-sdk": "^4"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
