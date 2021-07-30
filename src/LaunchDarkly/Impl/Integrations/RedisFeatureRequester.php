@@ -14,11 +14,16 @@ class RedisFeatureRequester extends FeatureRequesterBase
     /** @var string */
     var $_prefix;
 
+    const DEFAULT_PREFIX = 'launchdarkly';
+
     public function __construct(string $baseUri, string $sdkKey, array $options)
     {
         parent::__construct($baseUri, $sdkKey, $options);
 
-        $this->_prefix = $options['redis_prefix'] ?? 'launchdarkly';
+        $this->_prefix = $options['redis_prefix'] ?? null;
+        if ($this->_prefix === null || $this->_prefix === '') {
+            $this->_prefix = self::DEFAULT_PREFIX;
+        }
 
         $client = $options['predis_client'] ?? null;
         if ($client instanceof ClientInterface) {

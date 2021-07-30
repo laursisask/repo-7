@@ -1,6 +1,8 @@
 <?php
 namespace LaunchDarkly\Integrations;
 
+use \LaunchDarkly\Impl\Integrations\RedisFeatureRequester;
+
 /**
  * Integration with a Redis data store using the `predis` package.
  */
@@ -31,7 +33,7 @@ class Redis
     public static function featureRequester(array $options = [])
     {
         return function (string $baseUri, string $sdkKey, array $baseOptions) use ($options) {
-            return new Impl\RedisFeatureRequester($baseUri, $sdkKey, array_merge($baseOptions, $options));
+            return new RedisFeatureRequester($baseUri, $sdkKey, array_merge($baseOptions, $options));
         };
     }
 }
