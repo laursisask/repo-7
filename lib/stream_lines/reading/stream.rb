@@ -52,6 +52,8 @@ module StreamLines
           sleep(2**retries)
           retries += 1
           retry
+        rescue Exception => e
+          raise Exception, "Something weird happened after #{retries}: #{e}"
         ensure
           remote_file&.close
         end
