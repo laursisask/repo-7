@@ -8,11 +8,11 @@ module StreamLines
     class Stream
       include Enumerable
 
-      def initialize(url, encoding: Encoding.default_external, chunk_size: nil, read_timeout: 90)
+      def initialize(url, encoding: Encoding.default_external, chunk_size: nil, read_timeout: 10)
         @url = url
         @encoding = encoding
         @buffer = String.new(encoding: @encoding)
-        @from_offset = 0
+        @last_parsed_chunk = 0
         @chunk_size = chunk_size || 1024 * 1000 * 1 # 1 Mb chunks
         @read_timeout = read_timeout
       end
@@ -30,30 +30,33 @@ module StreamLines
         max_retries = 8
 
         begin
+          processed_chunks = 0
           remote_file = Down.open(url,
             read_timeout: @read_timeout,
             rewindable: false,
-            headers: { "Range" => "bytes=#{@from_offset * @chunk_size}-" }
+            headers: { "Range" => "bytes=#{@last_parsed_chunk}-" }
           )
 
           until remote_file.eof?
             chunk = remote_file.read(@chunk_size)
             lines = extract_lines(chunk)
             lines.each { |line| block.call(line) }
-            @from_offset += 1
+            processed_chunks += 1
+            @last_parsed_chunk = [processed_chunks * @chunk_size - @buffer.bytesize, 0].max
           end
 
           remote_file.close
           block.call(@buffer) if @buffer.size.positive?
 
-        rescue Down::ConnectionError, Down::TimeoutError, Down::ServerError, Down::SSLError => e
+        rescue Down::ConnectionError, Down::TimeoutError, Down::ServerError, Down::SSLError, JSON::ParserError => e
+          @buffer = String.new(encoding: @encoding) #empty the buffer
           raise Exception, "Giving up after #{retries} retries: #{e}" unless retries <= max_retries
 
           sleep(2**retries)
           retries += 1
           retry
         rescue Exception => e
-          raise Exception, "Something weird happened after #{retries}: #{e}"
+          raise Exception, "Something weird (#{e.class}) happened after #{retries} retries: #{e}"
         ensure
           remote_file&.close
         end
