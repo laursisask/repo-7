@@ -8,7 +8,7 @@ module StreamLines
     class Stream
       include Enumerable
 
-      def initialize(url, encoding: Encoding.default_external, chunk_size: nil, read_timeout: 10)
+      def initialize(url, encoding: Encoding.default_external, chunk_size: nil, read_timeout: 90)
         @url = url
         @encoding = encoding
         @buffer = String.new(encoding: @encoding)
