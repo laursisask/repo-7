@@ -1,5 +1,36 @@
 # OpenAPI Typescript Codegen
 
+Fork ([diff](https://github.com/ferdikoomen/openapi-typescript-codegen/compare/master...DND-IT:openapi-typescript-codegen:master))
+which adds a `--serviceTemplate` option. A variant of this fork is also in [this pull request](https://github.com/ferdikoomen/openapi-typescript-codegen/pull/1268) to the original upstream repo.
+
+Can be used in another project by adding to `package.json`:
+
+```json
+"openapi-typescript-codegen": "https://github.com/DND-IT/openapi-typescript-codegen.git#master",
+```
+
+To update or modify this fork, check it out locally:
+
+    git clone git@github.com:DND-IT/openapi-typescript-codegen.git
+    cd openapi-typescript-codegen
+    git remote add upstream git@github.com:ferdikoomen/openapi-typescript-codegen.git
+
+To pull in changes from original repo:
+
+    git fetch upstream
+    git rebase upstream/master master
+    npm ci
+
+To build a new version and test it locally in disco project:
+
+    npm run release
+    cp dist/index.js ../disco/node_modules/openapi-typescript-codegen/dist/index.js`
+
+To release a new version, run `npm run release` and push everything, including the `dist/index.js` file to GitHub. Then, in the project using it, delete the
+`openapi-typescript-codegen` entry in the `package-lock.json` and run `npm install` to install the new version.
+
+---
+
 [![NPM][npm-image]][npm-url]
 [![License][license-image]][license-url]
 [![Coverage][coverage-image]][coverage-url]
@@ -51,6 +82,7 @@ $ openapi --help
     --postfixServices         Service name postfix (default: "Service")
     --postfixModels           Model name postfix
     --request <value>         Path to custom request file
+    --serviceTemplate         Path to custom service handlebars template to generate the service files
     -h, --help                display help for command
 
   Examples
