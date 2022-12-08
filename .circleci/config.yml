@@ -4,6 +4,10 @@ workflows:
   workflow:
     jobs:
       - linux-test:
+          matrix:
+              parameters:
+                  php-version: ["7.3", "7.4", "8.0", "8.1"]
+                  composer-dependencies: ["lowest", "highest"]
           name: PHP 7.3
           docker-image: cimg/php:7.3
       - linux-test:
@@ -16,11 +20,13 @@ workflows:
 jobs:
   linux-test:
     parameters:
-      docker-image:
+      php-version:
+        type: string
+      composer-dependencies:
         type: string
 
     docker:
-      - image: <<parameters.docker-image>>
+      - image: cimg/php:<<parameters.php-version>>
       - image: redis
 
     steps:
@@ -28,6 +34,13 @@ jobs:
       - run:
           name: install dependencies
           command: composer install --no-progress
+      - when:
+          condition:
+            equal: [ <<parameters.composer-dependencies>>, "lowest" ]
+          steps:
+            - run:
+                name: downgrade to lowest versions
+                command: composer update --prefer-lowest --prefer-stable
       - run: mkdir -p ./phpunit
       - run:
           name: run tests
