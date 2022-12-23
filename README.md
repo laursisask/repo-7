@@ -1,6 +1,8 @@
 # LaunchDarkly Server-Side SDK for PHP - Redis integration with predis
 
 [![CircleCI](https://circleci.com/gh/launchdarkly/php-server-sdk-redis-predis.svg?style=svg)](https://circleci.com/gh/launchdarkly/php-server-sdk-redis-predis)
+[![Packagist](https://img.shields.io/packagist/v/launchdarkly/server-sdk-redis-predis.svg?style=flat-square)](https://packagist.org/packages/launchdarkly/server-sdk-redis-predis)
+[![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=API+reference&color=00add8)](https://launchdarkly.github.io/php-server-sdk-redis-predis)
 
 This library provides a Redis-backed data source for the [LaunchDarkly PHP SDK](https://github.com/launchdarkly/php-server-sdk), replacing the default behavior of querying the LaunchDarkly service endpoints. The underlying Redis client implementation is the [Predis](https://github.com/predis/predis) package. If you want to use the `phpredis` extension instead, see https://github.com/launchdarkly/php-server-sdk-redis-phpredis.
 
