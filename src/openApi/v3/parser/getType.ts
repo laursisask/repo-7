@@ -4,7 +4,9 @@ import { getMappedType } from './getMappedType';
 import { stripNamespace } from './stripNamespace';
 
 const encode = (value: string): string => {
-    return value.replace(/^[^a-zA-Z_$]+/g, '').replace(/[^\w$]+/g, '_');
+    const res = value.replace(/^[^a-zA-Z_$]+/g, '').replace(/[^\w$]+/g, '_');
+    // for model names only containing number (e.g. 401), we have the fallback here:
+    return res || `_${value.replace(/^[^a-zA-Z0-9_$]+/g, '').replace(/[^\w$]+/g, '_')}`;
 };
 
 /**
