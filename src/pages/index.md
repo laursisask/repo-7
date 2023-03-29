@@ -1,21 +1,21 @@
 ---
-title: Overview - Cat Analytics
-description: This is the overview page of Cat Analytics
+title: Overview - STLab
+description: This is the overview page of STLab
 contributors:
   - https://github.com/icaraps 
 ---
 
 <Hero slots="heading, text"/> 
 
-# Cat Analytics API
+# Software Technology Lab (STLab)
 
-Cat Product API offers limitless ways to integrate your most important customer data into key business processes. Cat Product API offer limitless ways.
+Adobe's Software Technology Lab team has a mission to improve the code developers write. It does so through education, tooling, libraries, and research.
 
 <Resources slots="heading, links"/>
 
 #### Resources
 
-* [Quickstart Guide](https://developer.adobe.com)
+* [Whitepapers](whitepapers/)
 * [Cat Analytics Github Repo](https://github.com/AdobeDocs/dev-site)
 
 ## Overview
@@ -81,4 +81,4 @@ request with your contribution. For more information, refer to the [contributing
 The timeout for API requests through adobe.io is currently *60 seconds*.
 
 The default rate limit for an Cat Analytics Company is *120 requests per minute*. (The limit is enforced as *12 requests every 6 seconds*).
-When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`    
+When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`
