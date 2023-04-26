@@ -33,6 +33,10 @@ module.exports = {
         path: '/guides/'
       },
       {
+        title: 'Whitepapers',
+        path: '/whitepapers/'
+      },
+      {
         title: 'API Reference',
         menu: [
           {
