@@ -2,83 +2,79 @@
 title: Overview - STLab
 description: This is the overview page of STLab
 contributors:
-  - https://github.com/icaraps 
+  - https://github.com/icaraps
 ---
 
-<Hero slots="heading, text"/> 
 
-# Software Technology Lab (STLab)
+<Hero slots="image, heading, text1"/>
 
-Adobe's Software Technology Lab team has a mission to improve the code developers write. It does so through education, tooling, libraries, and research.
+![Hero image](./images/header_gradient.jpg)
 
-<Resources slots="heading, links"/>
+# C++ at Adobe
 
-#### Resources
 
-* [Whitepapers](whitepapers/)
-* [Cat Analytics Github Repo](https://github.com/AdobeDocs/dev-site)
+Dive into the world of Adobe's C++ expertise with cutting-edge whitepapers,
+insightful blogs, comprehensive training resources, exciting events, and
+rewarding career opportunities.
 
 ## Overview
 
-This documentation provides instructions for Catt Analytics 2.0 APIs. For working with Cat Analytics APIs, see [Cat Analytics API Documentation](https://github.com/AdobeDocs/dev-site).
+Welcome to 'C++ at Adobe,' where C++ is at the heart of our innovation. Discover
+cutting-edge whitepapers and insightful blogs written by our experts. Gain
+skills through our training, network at our events, and explore exciting career
+opportunities within our vibrant programming community. Dive in to understand
+how C++ fuels Adobe's mission to revolutionize digital experiences.
 
-The Cat Analytics APIs are a collection of APIs that power Cat Analytics products like Cat Workspace. 
-The APIs allow for the creation of data rich user interfaces that you can use to manipulate and integrate data.
-You can also create reports to explore, get insights, or answer important questions about your data.
+## Discover
 
-## Discover 
+<DiscoverBlock slots="heading, link, text"/>
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+### Publications
 
-### Get Started
+[Whitepapers](whitepapers/)
 
-[Quickstart Guide](guides/)
-    
-Get started with the Cat Analytics APIs.
-
-<DiscoverBlock slots="heading, link, text"/> 
-
-### Guides
-
-[Calculated Metrics API](guides/calculated_metrics_api/) 
-     
-Returns information on the user's company that is necessary for making other Cat Analytics API calls.
+Explore our whitepaper section to delve deep into the innovative usage of C++ at
+Adobe, presented through comprehensive research papers penned by our
+industry-leading software engineers.
 
 <DiscoverBlock slots="link, text"/>
 
-[Segments API](guides/segments_api/) 
+[Blog](https://blog.developer.adobe.com/tagged/adobe-cpp)
 
-Provides configuration guidance and best practices for the /segments endpoint.
-
-<DiscoverBlock slots="link, text"/>
-
-[Reporting Guide API](guides/reporting_api/)
-
-Provides configuration guidance and best practices for the /reports endpoint.
+Discover the Blog section, where Adobe's seasoned engineers offer insightful
+articles detailing the intricate and fascinating world of C++ programming in our
+technology landscape.
 
 <DiscoverBlock slots="link, text"/>
 
-[Migrating from 1.4 to 2.0](guides/migrating/)
+[Training](training/)
 
-For help migrating from the 1.4 versions of the Analytics API to the newer and more capable /reports API.   
+In the Training section, you'll find a range of resources designed to elevate
+your C++ skills, tailored for all levels of expertise, and closely aligned with
+Adobe's cutting-edge programming practices.
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
-### API References
+### C++ at Adobe
 
-[Try the API](api/) 
+[Events](events/)
 
-Try the Analytics API with Swagger UI. Explore, make calls, with full endpoint descriptions.
+Browse the Events section for exciting opportunities to engage with C++
+enthusiasts and Adobe's experts, through webinars, workshops, and conferences
+focused on showcasing the revolutionary applications of C++ at Adobe.
 
-## Contributing 
+<DiscoverBlock slots="link, text"/>
 
-We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions 
-or deletions for this documentation, check out the source from [this github repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).
+[Careers](careers/)
 
-## API Requests & Rate Limits
+Explore the Careers section for rewarding opportunities to join Adobe's dynamic
+team of C++ professionals, contributing to the company's innovative solutions
+and shaping the future of digital experiences.
 
-The timeout for API requests through adobe.io is currently *60 seconds*.
+<DiscoverBlock slots="link, text"/>
 
-The default rate limit for an Cat Analytics Company is *120 requests per minute*. (The limit is enforced as *12 requests every 6 seconds*).
-When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`
+[Teams](teams/)
+
+Step into the Teams section to meet our talented C++ professionals at Adobe,
+working on compelling challenges and pioneering solutions that reshape the
+digital world with C++.
