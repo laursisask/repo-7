@@ -24,11 +24,12 @@ module.exports = {
       },
       {
         title: 'Events',
-        path: '/events/'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp/events'
       },
       {
         title: 'Blog',
-        path: 'https://blog.developer.adobe.com/tagged/adobe-cpp'
+        /* Temporarily adobe-engineering. Ultimately should be adobe-cpp */
+        path: 'https://blog.developer.adobe.com/tagged/adobe-engineering'
       },
       {
         title: 'Training',
@@ -36,11 +37,11 @@ module.exports = {
       },
       {
         title: 'Careers',
-        path: '/careers/'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp/careers'
       },
       {
         title: 'Teams',
-        path: '/teams/'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp/teams'
       }
     ],
     subPages: []
