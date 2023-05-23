@@ -11,7 +11,7 @@
  */
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/cpp/',
+  pathPrefix: process.env.PATH_PREFIX || '/cpp/docs/',
   siteMetadata: {
     pages: [
       {
