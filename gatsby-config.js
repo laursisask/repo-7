@@ -11,7 +11,7 @@
  */
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/cpp/docs',
+  pathPrefix: process.env.PATH_PREFIX || '/cpp/',
   siteMetadata: {
     pages: [
       {
@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         title: 'Events',
-        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp/events'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events'
       },
       {
         title: 'Blog',
@@ -37,11 +37,11 @@ module.exports = {
       },
       {
         title: 'Careers',
-        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp/careers'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/careers'
       },
       {
         title: 'Teams',
-        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp/teams'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/teams'
       }
     ],
     subPages: []
