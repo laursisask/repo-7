@@ -53,15 +53,19 @@ For more in-depth [instructions](https://github.com/adobe/aio-theme#getting-star
 
 ## How to deploy
 
-For any team that wishes to deploy to the developer.adobe.com and developer-stage.adobe.com websites, they must be in contact with the dev-site team. Teams will be given a path that will follow the pattern `developer.adobe.com/{product}/`. This will allow doc developers to setup their subpaths to look something like:
+### Update Links
 
-```text
-developer.adobe.com/{product}/docs
-developer.adobe.com/{product}/community
-developer.adobe.com/{product}/community/code_of_conduct
-developer.adobe.com/{product}/community/contribute
-```
+When moving from stage to prod, links need to be updated:
+- Links in `gatsby-config.js` should be moved from `https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events?aio_internal` to `../cpp-docs/events`
+- Same is true for links in `src/pages/index.md`
+- Update the [nav google
+  doc](https://docs.google.com/document/d/1nJMkhBQX23H4k7nhbE8UU44nHgUEfaQV0edKyDSsN58/edit)'s
+  links (below product) from `https://developer-stage.adobe.com/cpp` to
+  `https://developer.adobe.com/cpp`. Other styled links should change from
+  `https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events` to
+  `https://developer.adobe.com/cpp-docs/events`
 
-### Launching a deploy
+### Deploy Gatsby site
 
-You can deploy using the GitHub actions deploy workflow see [deploy instructions](https://github.com/adobe/aio-theme#deploy-to-azure-storage-static-websites).
+Use the GitHub actions deploy workflow see [deploy
+instructions](https://github.com/adobe/aio-theme#deploy-to-azure-storage-static-websites).
