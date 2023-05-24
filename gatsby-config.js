@@ -24,12 +24,12 @@ module.exports = {
       },
       {
         title: 'Events',
-        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events?aio_internal'
       },
       {
         title: 'Blog',
         /* Temporarily adobe-engineering. Ultimately should be adobe-cpp */
-        path: 'https://blog.developer.adobe.com/tagged/adobe-engineering'
+        path: 'https://blog.developer.adobe.com/tagged/adobe-engineering?aio_internal'
       },
       {
         title: 'Training',
@@ -37,11 +37,11 @@ module.exports = {
       },
       {
         title: 'Careers',
-        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/careers'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/careers?aio_internal'
       },
       {
         title: 'Teams',
-        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/teams'
+        path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/teams?aio_internal'
       }
     ],
     subPages: []
