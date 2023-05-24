@@ -39,7 +39,7 @@ industry-leading software engineers.
 
 <DiscoverBlock slots="link, text"/>
 
-[Blog](https://blog.developer.adobe.com/tagged/adobe-cpp)
+[Blog](https://blog.developer.adobe.com/tagged/adobe-engineering?aio_internal)
 
 Discover the Blog section, where Adobe's seasoned engineers offer insightful
 articles detailing the intricate and fascinating world of C++ programming in our
@@ -57,7 +57,7 @@ Adobe's cutting-edge programming practices.
 
 ### C++ at Adobe
 
-[Events](events/)
+[Events](https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events?aio_internal)
 
 Browse the Events section for exciting opportunities to engage with C++
 enthusiasts and Adobe's experts, through webinars, workshops, and conferences
@@ -65,7 +65,7 @@ focused on showcasing the revolutionary applications of C++ at Adobe.
 
 <DiscoverBlock slots="link, text"/>
 
-[Careers](careers/)
+[Careers](https://main--adobe-io-website--adobe.hlx.page/cpp-docs/careers?aio_internal)
 
 Explore the Careers section for rewarding opportunities to join Adobe's dynamic
 team of C++ professionals, contributing to the company's innovative solutions
@@ -73,7 +73,7 @@ and shaping the future of digital experiences.
 
 <DiscoverBlock slots="link, text"/>
 
-[Teams](teams/)
+[Teams](https://main--adobe-io-website--adobe.hlx.page/cpp-docs/teams?aio_internal)
 
 Step into the Teams section to meet our talented C++ professionals at Adobe,
 working on compelling challenges and pioneering solutions that reshape the
