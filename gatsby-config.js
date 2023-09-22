@@ -18,18 +18,18 @@ module.exports = {
         title: 'C++ at Adobe',
         path: '/'
       },
-      {
+      /*{
         title: 'Whitepapers',
         path: '/whitepapers/'
-      },
+      },*/
       {
         title: 'Events',
         path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events?aio_internal'
+        // path: '/cpp-docs/events'
       },
       {
         title: 'Blog',
-        /* Temporarily adobe-engineering. Ultimately should be adobe-cpp */
-        path: 'https://blog.developer.adobe.com/tagged/adobe-engineering?aio_internal'
+        path: 'https://blog.developer.adobe.com/tagged/cpp-at-adobe?aio_internal'
       },
       {
         title: 'Training',
@@ -38,10 +38,12 @@ module.exports = {
       {
         title: 'Careers',
         path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/careers?aio_internal'
+        // path: '/cpp-docs/careers'
       },
       {
         title: 'Teams',
         path: 'https://main--adobe-io-website--adobe.hlx.page/cpp-docs/teams?aio_internal'
+        // path: '/cpp-docs/teams'
       }
     ],
     subPages: []

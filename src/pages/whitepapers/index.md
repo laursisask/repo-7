@@ -11,6 +11,9 @@ description: This is the whitepaper overview page
 
 Our library of C++ whitepapers, providing insights, methodologies, and advanced techniques
 
+## Nothing here yet! Check back later
+
+<!--
 ## Featured
 
 <TextBlock slots="image, heading, text, links" width="33%" />
@@ -110,3 +113,5 @@ object, state, and value. Finally, we define "meaningless" and demonstrate
 its harmony with existing practice and desires. We discuss the implications of
 this model for move semantics, correctness, and efficiency.  
 *David Sankel* &mdash; May 19, 2023
+
+-->

@@ -31,14 +31,6 @@ how C++ fuels Adobe's mission to revolutionize digital experiences.
 
 ### Publications
 
-[Whitepapers](whitepapers/)
-
-Explore our whitepaper section to delve deep into the innovative usage of C++ at
-Adobe, presented through comprehensive research papers penned by our
-industry-leading software engineers.
-
-<DiscoverBlock slots="link, text"/>
-
 [Blog](https://blog.developer.adobe.com/tagged/adobe-engineering?aio_internal)
 
 Discover the Blog section, where Adobe's seasoned engineers offer insightful
