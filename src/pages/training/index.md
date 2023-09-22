@@ -19,16 +19,6 @@ is to provide you with a comprehensive understanding of the principles that
 underlie great code, based on the latest research and deep thinking in the
 field.
 
-### Better Code: Algorithms
-
-A function is a fundamental building block in software development and a key
-tool for designing efficient and maintainable systems. This talk looks at the
-characteristics of a “good” function and provides practical guidance on when and
-how to refactor and utilize existing libraries to develop Better Code.  
-*Sean Parent*
-
-[**See the video...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ) [(Slides)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
 ### Better Code: Contracts
 
 Does it sometimes feel like all computer systems are held together with duct
@@ -36,12 +26,56 @@ tape and good intentions? Do you have confidence that the code you write, and
 the changes you make, are correct? What does “correct” even mean? How do we know
 the code we write today won’t become a long-term liability? These persistent
 questions can be enough to suck all the fun out of programming, but it doesn’t
-have to be that way.  In this talk, we’ll look at the connective tissue of good
-code, and show how to keep it strong and supple.  We’ll suggest replacing code
+have to be that way. In this talk, we’ll look at the connective tissue of good
+code, and show how to keep it strong and supple. We’ll suggest replacing code
 reviews with something better and chart the path to a more hopeful future of
 software.  
 *Dave Abrahams*
 
-[**See part 1...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ) [(Slides)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-[**See part 2...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ) [(Slides)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+### Better Code: Algorithms - Preliminaries
+
+A function is a fundamental building block in software development and a key
+tool for designing efficient and maintainable systems. This talk looks at the
+characteristics of a “good” function and provides practical guidance on when and
+how to refactor and utilize existing libraries to develop Better Code.  
+*Sean Parent*
+
+[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+### Better Code: Functional Design
+
+Functional languages emphasize powerful, simple, and composable APIs, but you
+don't need to use these languages to benefit from their advantages.
+
+This talk introduces functional design and showcases its application to several
+real-world problems. It covers denotational semantics and several math-based
+programming abstractions. Finally, functional solutions are compared with
+traditional ones.
+
+No prior knowledge of functional programming is required for this talk.  
+*David Sankel*
+
+[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+### Better Code: Reliable Types
+
+Types are as fundamental as algorithms when architecting any software system. By
+designing our types around relationships already in our code, and rigorously
+upholding those relationships with our type invariants, we can build more
+reliable systems that are easier to reason about. We cover type design and
+making invalid states unrepresentable with algebraic data types.  
+*Nick DeMarco*
+
+[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+### Better Code: Algorithms - Composition
+
+Algorithm composition is the process of combining existing algorithms to create
+new ones that solve complex problems. This talk looks at different forms of
+composition with different trade-offs. The talk will inspire you to think of
+algorithms as reusable building blocks that can be combined in novel ways.  
+*Sean Parent*
+
+[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
