@@ -53,18 +53,6 @@ For more in-depth [instructions](https://github.com/adobe/aio-theme#getting-star
 
 ## How to deploy
 
-### Update Links
-
-When moving from stage to prod, links need to be updated:
-- Links in `gatsby-config.js` should be moved from `https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events?aio_internal` to `../cpp-docs/events`
-- Same is true for links in `src/pages/index.md`
-- Update the [nav google
-  doc](https://docs.google.com/document/d/1nJMkhBQX23H4k7nhbE8UU44nHgUEfaQV0edKyDSsN58/edit)'s
-  links (below product) from `https://developer-stage.adobe.com/cpp` to
-  `https://developer.adobe.com/cpp`. Other styled links should change from
-  `https://main--adobe-io-website--adobe.hlx.page/cpp-docs/events` to
-  `https://developer.adobe.com/cpp-docs/events`
-
 ### Deploy Gatsby site
 
 Use the GitHub actions deploy workflow see [deploy
