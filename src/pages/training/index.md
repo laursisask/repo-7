@@ -19,6 +19,7 @@ is to provide you with a comprehensive understanding of the principles that
 underlie great code, based on the latest research and deep thinking in the
 field.
 
+<!--
 ### Better Code: Contracts
 
 Does it sometimes feel like all computer systems are held together with duct
@@ -44,6 +45,8 @@ how to refactor and utilize existing libraries to develop Better Code.
 
 [**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
+-->
+
 ### Better Code: Functional Design
 
 Functional languages emphasize powerful, simple, and composable APIs, but you
@@ -57,7 +60,8 @@ traditional ones.
 No prior knowledge of functional programming is required for this talk.  
 *David Sankel*
 
-[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+[**See the recording...**](https://youtu.be/Ijpe9oaF26k)
 
 ### Better Code: Reliable Types
 
@@ -68,8 +72,9 @@ reliable systems that are easier to reason about. We cover type design and
 making invalid states unrepresentable with algebraic data types.  
 *Nick DeMarco*
 
-[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[**See the recording...**](https://youtu.be/J7Aql-rdx6Y)
 
+<!--
 ### Better Code: Algorithms - Composition
 
 Algorithm composition is the process of combining existing algorithms to create
@@ -79,3 +84,5 @@ algorithms as reusable building blocks that can be combined in novel ways.
 *Sean Parent*
 
 [**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+-->
