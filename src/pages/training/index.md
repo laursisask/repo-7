@@ -19,7 +19,6 @@ is to provide you with a comprehensive understanding of the principles that
 underlie great code, based on the latest research and deep thinking in the
 field.
 
-<!--
 ### Better Code: Contracts
 
 Does it sometimes feel like all computer systems are held together with duct
@@ -33,7 +32,7 @@ reviews with something better and chart the path to a more hopeful future of
 software.  
 *Dave Abrahams*
 
-[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[**See the recording...**](https://youtu.be/7WktGyfXhwM)
 
 ### Better Code: Algorithms - Preliminaries
 
@@ -43,9 +42,7 @@ characteristics of a “good” function and provides practical guidance on when
 how to refactor and utilize existing libraries to develop Better Code.  
 *Sean Parent*
 
-[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
--->
+[**See the recording...**](https://youtu.be/wtOkvB_iFw4)
 
 ### Better Code: Functional Design
 
