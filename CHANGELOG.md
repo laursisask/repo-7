@@ -2,6 +2,10 @@
 
 All notable changes to the project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.3.0] - 2023-10-25
+### Changed:
+- Expanded SDK version support to v6
+
 ## [1.2.1] - 2023-01-25
 ### Fixed:
 - Fixed compatibility error with PHP SDK 5.x branch.
