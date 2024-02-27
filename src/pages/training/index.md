@@ -71,7 +71,6 @@ making invalid states unrepresentable with algebraic data types.
 
 [**See the recording...**](https://youtu.be/J7Aql-rdx6Y)
 
-<!--
 ### Better Code: Algorithms - Composition
 
 Algorithm composition is the process of combining existing algorithms to create
@@ -80,6 +79,4 @@ composition with different trade-offs. The talk will inspire you to think of
 algorithms as reusable building blocks that can be combined in novel ways.  
 *Sean Parent*
 
-[**See the recording...**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
--->
+[**See the recording...**](https://youtu.be/HJb6Czi0Ky0)
