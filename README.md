@@ -8,8 +8,17 @@ This package provides a simple way to download pre-trained models from the inter
 
 To install the package, you can use pip:
 
+Testing version: 
+
 ```bash
-pip install comfy-model-download
+pip install -i https://test.pypi.org/simple/ comfy-model-download
+```
+
+Add next two lines to your requirements.txt file for the testing version:
+
+```text
+--extra-index-url https://test.pypi.org/simple/
+comfy_model_download
 ```
 
 ## Usage
@@ -20,7 +29,7 @@ The package will download the models in parallel using the number of workers spe
 If the model must be download from GCS it is needed to provide a key file.
 
 ```python
-from model_download_package import ModelDownload
+from comfy_model_download import ModelDownload
 
 download = ModelDownload(
     config_file="models_config.yaml",
