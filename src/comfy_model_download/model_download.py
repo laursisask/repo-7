@@ -88,7 +88,7 @@ class ModelDownload:
                 # Handling GCS URL
                 bucket_name = parsed_url.netloc
                 blob = self.gcs_client.bucket(bucket_name).get_blob(parsed_url.path.lstrip('/'))
-                logging.info(f"Blob size: {blob.size}")
+                logging.info(f"Blob {blob.path} size: {blob.size}")
                 download_needed = (
                         not os.path.exists(file_path)
                         or force_download
@@ -102,7 +102,7 @@ class ModelDownload:
                     blob.download_to_filename(file_path)
                     logging.info(f"Model {file_path} downloaded successfully from GCS.")
                 else:
-                    logging.info(f"File Size: {os.path.getsize(file_path)}")
+                    logging.info(f"File {file_path} Size: {os.path.getsize(file_path)}")
                     logging.info(f"File {file_path} already exists and is up to date. Skipping download.")
             else:
                 # Send a HEAD request to the model URL to get the file size
