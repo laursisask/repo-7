@@ -3,7 +3,7 @@
 REPOSITORY=testpypi
 
 dist:
-	python -m build
+	python3 -m build
 
 install: setup.py
 	pip install -e .
