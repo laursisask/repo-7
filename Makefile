@@ -17,4 +17,4 @@ upload: dist
 		dist/*
 
 clean:
-	rm -rf build dist *.egg-info
+	rm -rf dist src/*.egg-info
