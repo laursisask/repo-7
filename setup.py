@@ -5,11 +5,5 @@ setup(
     version='0.1',
     description='A package for downloading models',
     packages=find_packages(),
-    install_requires=[
-        'google-cloud-storage',
-        'requests',
-        'tqdm',
-        'urllib3'
-    ],
 )
 

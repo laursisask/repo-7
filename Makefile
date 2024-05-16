@@ -1,13 +1,20 @@
-.PHONY: all
+.PHONY: install requirements upload clean
 
-build: setup.py
-	python setup.py sdist bdist_wheel
+REPOSITORY=testpypi
+
+dist:
+	python -m build
 
 install: setup.py
 	pip install -e .
 
 requirements: requirements.txt
 	pip install -r requirements.txt
+
+upload: dist
+	twine upload \
+		--repository ${REPOSITORY} \
+		dist/*
 
 clean:
 	rm -rf build dist *.egg-info
