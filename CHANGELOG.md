@@ -1,3 +1,9 @@
+## 0.3.3 (2024-05-16)
+
+### Refactor
+
+- **src/model_download**: Rename model_download_package to comfy_model_download
+
 ## 0.3.2 (2024-05-16)
 
 ### Refactor
