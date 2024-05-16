@@ -1,8 +1,8 @@
-# Model Download
+# Comfy Model Download
 
 ## Description
 
-This package provides a simple way to download pre-trained models from the internet.
+This package provides a simple way to download pre-trained models from the internet to use in your Comfy projects.
 
 ## Installation
 
