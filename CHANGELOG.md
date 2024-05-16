@@ -1,3 +1,10 @@
+## 0.3.4 (2024-05-17)
+
+### Refactor
+
+- **src/comfy_model_download**: Remove unused import in src/comfy_model_download/__init__.py
+- **tests**: Rename test file
+
 ## 0.3.3 (2024-05-16)
 
 ### Refactor
