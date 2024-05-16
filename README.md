@@ -9,7 +9,7 @@ This package provides a simple way to download pre-trained models from the inter
 To install the package, you can use pip:
 
 ```bash
-pip install model-download-package
+pip install comfy-model-download
 ```
 
 ## Usage
@@ -39,34 +39,20 @@ The models.yaml file should be in the root of the project and should have the fo
 models:
   checkpoints:
     - name: JuggernautXL.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/JuggernautXL.safetensors
-    - name: epicphotogasm_lastUnicorn.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/epicphotogasm_lastUnicorn.safetensors
+      url: gs://example_gcs_bucket/JuggernautXL.safetensors
       #force_download: true
     - name: AnimateLCM_sd15_t2v_lora.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/AnimateLCM_sd15_t2v_lora.safetensors
-    - name: add-detail-xl.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/add-detail-xl.safetensors
-      #force_download: true
+      url: gs://example_gcs_bucket/AnimateLCM_sd15_t2v_lora.safetensors
+      
   ipadapter:
     - name: ip-adapter-plus_sd15.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/ip-adapter-plus_sd15.safetensors
+      url: gs://example_gcs_bucket/ip-adapter-plus_sd15.safetensors
 
   animatediff_models:
     - name: AnimateLCM_sd15_t2v.ckpt
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/AnimateLCM_sd15_t2v.ckpt
+      url: gs://example_gcs_bucket/AnimateLCM_sd15_t2v.ckpt
 
-  clip_vision:
-    - name: CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
-
-  controlnet:
-    - name: control_v1p_sd15_qrcode_monster.safetensors
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/control_v1p_sd15_qrcode_monster.safetensors
-
-  upscale_models:
-    - name: 8x_NMKD-Superscale_150000_G.pth
-      url: gs://fc-freepik-pro-rev1-europe-west1-inference-models/8x_NMKD-Superscale_150000_G.pth
+  ...
 ```
 
 If the model is already downloaded and you want to force the download, you can use the `force_download` key.
