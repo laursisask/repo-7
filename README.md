@@ -17,7 +17,7 @@ pip install -i https://test.pypi.org/simple/ comfy-model-download
 Add next two lines to your requirements.txt file for the testing version:
 
 ```text
---extra-index-url https://test.pypi.org/simple/
+--index-url https://test.pypi.org/simple/
 comfy_model_download
 ```
 
