@@ -1,0 +1,31 @@
+[project]
+name = "comfy_model_download"
+version = "0.2.0"
+authors = [
+  { name="Sergio Tejón", email="stejon@freepik.com" },
+]
+description = "A package to download AI models for ComfyUI from the internet or from private GCS buckets"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'google-cloud-storage',
+    'requests',
+    'tqdm',
+    'urllib3'
+]
+
+[project.urls]
+#Homepage = "https://github.com/pypa/sampleproject"
+#Issues = "https://github.com/pypa/sampleproject/issues"
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
