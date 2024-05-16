@@ -1,3 +1,9 @@
+## 0.4.0 (2024-05-17)
+
+### Feat
+
+- Add ModelDownload class to comfy_model_download package
+
 ## 0.3.4 (2024-05-17)
 
 ### Refactor
