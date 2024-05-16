@@ -1,6 +1,6 @@
 [project]
 name = "comfy_model_download"
-version = "0.3.0"
+version = "0.3.1"
 authors = [
   { name="Sergio Tejón", email="stejon@freepik.com" },
 ]
