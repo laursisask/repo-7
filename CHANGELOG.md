@@ -1,3 +1,9 @@
+## 0.5.0 (2024-05-17)
+
+### Feat
+
+- **CI**: Add workflow for publishing to TestPyPI
+
 ## 0.4.1 (2024-05-17)
 
 ## 0.4.0 (2024-05-17)
