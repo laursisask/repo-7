@@ -1,6 +1,6 @@
 .PHONY: install requirements upload clean
 
-REPOSITORY=testpypi
+REPOSITORY?=testpypi
 
 dist:
 	python3 -m build
