@@ -16,7 +16,7 @@ protobuf==4.25.3
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
 pyproject_hooks==1.1.0
-requests==2.31.0
+requests==2.32.2
 rsa==4.9
 tqdm==4.66.4
 urllib3==2.2.1
