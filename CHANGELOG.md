@@ -1,3 +1,9 @@
+## 0.5.1 (2024-06-11)
+
+### Refactor
+
+- Remove redundant GCS client creation in ModelDownload class
+
 ## 0.5.0 (2024-05-17)
 
 ### Feat
