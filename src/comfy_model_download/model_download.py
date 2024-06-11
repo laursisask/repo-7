@@ -19,16 +19,11 @@ class ModelDownload:
         self.max_workers = max_workers
         self.model_path = model_path
         self.config_file = config_file
-
-        # Create a GCS client using the credentials
-        if key_file is not None:
-            with open(key_file) as f:
-                json_key = json.load(f)
-            credentials = service_account.Credentials.from_service_account_info(json_key)
-            self.gcs_client = storage.Client(project=json_key['project_id'], credentials=credentials)
+        self.key_file = key_file
 
     # Start the download process
     def start(self):
+        # Check if the model path is provided
         if self.model_path is None:
             logging.error("Model path is required.")
             return
@@ -37,6 +32,13 @@ class ModelDownload:
         if not os.path.exists(self.config_file):
             logging.error(f"File '{self.config_file}' does not exist.")
             return
+
+        # Create a GCS client using the credentials if a key file is provided
+        if self.key_file is not None:
+            with open(self.key_file) as f:
+                json_key = json.load(f)
+            credentials = service_account.Credentials.from_service_account_info(json_key)
+            self.gcs_client = storage.Client(project=json_key['project_id'], credentials=credentials)
 
         # Load the nodes file
         with open(self.config_file, 'r') as file:
