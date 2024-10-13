@@ -17,7 +17,7 @@ protobuf = []
 [dependencies]
 proc-macro2 = "1"
 quote = "1"
-syn = "1"
+syn = "2"
 
 [dev-dependencies]
 prometheus-client = { path = "../", features = ["protobuf"] }
