@@ -2,6 +2,13 @@
 
 All notable changes to the project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.3.1](https://github.com/laursisask/repo-7/compare/v1.3.0...1.3.1) (2024-10-13)
+
+
+### Miscellaneous Chores
+
+* Update CODEOWNERS ([#19](https://github.com/laursisask/repo-7/issues/19)) ([ff74761](https://github.com/laursisask/repo-7/commit/ff74761206b5f625261bab465e8a3e5e0b5d3268))
+
 ## [1.3.0] - 2023-10-25
 ### Changed:
 - Expanded SDK version support to v6
@@ -21,4 +28,3 @@ All notable changes to the project will be documented in this file. This project
 
 ## [1.0.0] - 2021-08-06
 Initial release, for use with version 4.x of the LaunchDarkly PHP SDK.
-
