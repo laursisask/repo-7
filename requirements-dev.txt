@@ -53,7 +53,7 @@ pbr==5.11.1
     # via stevedore
 platformdirs==3.10.0
     # via pylint
-pycodestyle==2.11.0
+pycodestyle==2.12.1
     # via flake8
 pydocstyle==6.3.0
     # via cs.aws-account (setup.py)
