@@ -37,7 +37,7 @@ jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-lazy-object-proxy==1.9.0
+lazy-object-proxy==1.10.0
     # via astroid
 markdown-it-py==3.0.0
     # via rich
