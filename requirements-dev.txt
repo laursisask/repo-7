@@ -23,7 +23,7 @@ cs-ratelimit==1.3.0
     # via cs.aws-account (setup.py)
 dill==0.3.7
     # via pylint
-flake8==6.1.0
+flake8==7.1.1
     # via cs.aws-account (setup.py)
 gitdb==4.0.10
     # via gitpython
