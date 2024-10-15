@@ -28,7 +28,7 @@ GEM
     get_process_mem (0.2.7)
       ffi (~> 1.0)
     hashdiff (1.0.1)
-    memory_profiler (1.0.0)
+    memory_profiler (1.0.2)
     multi_json (1.14.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
