@@ -81,7 +81,7 @@ snowballstemmer==2.2.0
     # via pydocstyle
 stevedore==5.1.0
     # via bandit
-tomlkit==0.12.1
+tomlkit==0.13.2
     # via pylint
 urllib3==1.26.16
     # via botocore
