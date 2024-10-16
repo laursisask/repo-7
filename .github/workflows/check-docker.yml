@@ -278,7 +278,7 @@ jobs:
       run: yarn workspace ${{ matrix.package }} build-dry:docker ${{ github.sha }}
     - continue-on-error: true
       name: Scan image for security issues
-      uses: aquasecurity/trivy-action@0.27.0
+      uses: aquasecurity/trivy-action@0.28.0
       with:
         exit-code: 1
         format: table
