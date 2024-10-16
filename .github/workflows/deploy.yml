@@ -341,7 +341,7 @@ jobs:
         '
     - continue-on-error: true
       name: Push changes
-      uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6
+      uses: ad-m/github-push-action@d91a481090679876dfc4178fef17f286781251df
       with:
         branch: trunk
         github_token: ${{ secrets.SELENIUM_CI_TOKEN }}
