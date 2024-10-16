@@ -303,28 +303,28 @@ jobs:
       run: docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
     - continue-on-error: true
       name: Deploy new images
-      uses: nick-invision/retry@3e91a01664abd3c5cd539100d10d33b9c5b68482
+      uses: nick-invision/retry@7152eba30c6575329ac0576536151aca5a72780e
       with:
         command: VERSION="${GRID_VERSION}" BUILD_DATE=${BUILD_DATE} make release
         max_attempts: 3
         timeout_minutes: 20
     - continue-on-error: true
       name: Tag images as latest
-      uses: nick-invision/retry@3e91a01664abd3c5cd539100d10d33b9c5b68482
+      uses: nick-invision/retry@7152eba30c6575329ac0576536151aca5a72780e
       with:
         command: VERSION="${GRID_VERSION}" BUILD_DATE=${BUILD_DATE} make tag_latest
         max_attempts: 3
         timeout_minutes: 20
     - continue-on-error: true
       name: Deploy latest tag
-      uses: nick-invision/retry@3e91a01664abd3c5cd539100d10d33b9c5b68482
+      uses: nick-invision/retry@7152eba30c6575329ac0576536151aca5a72780e
       with:
         command: VERSION="${GRID_VERSION}" BUILD_DATE=${BUILD_DATE} make release_latest
         max_attempts: 3
         timeout_minutes: 20
     - continue-on-error: true
       name: Tag browser images
-      uses: nick-invision/retry@3e91a01664abd3c5cd539100d10d33b9c5b68482
+      uses: nick-invision/retry@7152eba30c6575329ac0576536151aca5a72780e
       with:
         command: VERSION="${GRID_VERSION}" BUILD_DATE=${BUILD_DATE} PUSH_IMAGE=true
           make tag_and_push_browser_images
