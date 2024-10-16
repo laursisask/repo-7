@@ -260,7 +260,7 @@ jobs:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
     - continue-on-error: true
-      uses: actions/cache@v2.1.7
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
         path: ~/go/pkg/mod
