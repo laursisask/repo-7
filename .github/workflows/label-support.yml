@@ -249,7 +249,7 @@ jobs:
     - continue-on-error: true
       if: contains(github.event.issue.labels.*.name, 'support')
       name: Close Issue
-      uses: peter-evans/close-issue@v2
+      uses: peter-evans/close-issue@v3
       with:
         comment: "Sorry, but we'd like to keep issues related to code in this repository.\
           \ Thank you \U0001F647 \n\nIf you have questions about writing workflows\
