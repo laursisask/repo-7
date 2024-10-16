@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/aws/aws-sdk-go v1.44.284
-	github.com/aws/aws-sdk-go-v2 v1.18.1
+	github.com/aws/aws-sdk-go-v2 v1.32.2
 	github.com/aws/aws-sdk-go-v2/config v1.18.27
 	github.com/aws/aws-sdk-go-v2/credentials v1.13.26
 	github.com/aws/aws-sdk-go-v2/service/amp v1.16.12
@@ -17,7 +17,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/resourcegroupstaggingapi v1.14.14
 	github.com/aws/aws-sdk-go-v2/service/storagegateway v1.18.14
 	github.com/aws/aws-sdk-go-v2/service/sts v1.19.2
-	github.com/aws/smithy-go v1.13.5
+	github.com/aws/smithy-go v1.22.0
 	github.com/grafana/regexp v0.0.0-20221123153739-15dc172cd2db
 	github.com/prometheus/client_golang v1.15.1
 	github.com/prometheus/common v0.43.0
