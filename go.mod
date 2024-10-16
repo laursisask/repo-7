@@ -9,7 +9,7 @@ require (
 	github.com/hashicorp/aws-sdk-go-base v0.7.0
 	github.com/hashicorp/go-cleanhttp v0.5.1
 	github.com/hashicorp/go-hclog v0.10.0 // indirect
-	github.com/hashicorp/go-multierror v1.1.0
+	github.com/hashicorp/go-multierror v1.1.1
 	github.com/hashicorp/go-version v1.2.1
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.3.0
 	github.com/jen20/awspolicyequivalence v1.1.0
