@@ -23,7 +23,7 @@ require (
 	github.com/prometheus/client_golang v1.15.0
 	github.com/stretchr/testify v1.8.2
 	github.com/teambition/rrule-go v1.8.2
-	go.uber.org/multierr v1.10.0
+	go.uber.org/multierr v1.11.0
 	go.uber.org/zap v1.24.0
 	golang.org/x/net v0.12.0
 	golang.org/x/oauth2 v0.7.0
