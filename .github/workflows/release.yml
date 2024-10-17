@@ -259,7 +259,7 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       id: semantic
       name: "\U0001F680 Release"
-      uses: cycjimmy/semantic-release-action@v2
+      uses: cycjimmy/semantic-release-action@v4
       with:
         extra_plugins: '@google/semantic-release-replace-plugin
 
