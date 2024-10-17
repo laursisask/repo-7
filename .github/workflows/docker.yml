@@ -260,7 +260,7 @@ jobs:
         submodules: true
     - continue-on-error: true
       name: "\U0001F511 Login to Docker Hub"
-      uses: docker/login-action@v2
+      uses: docker/login-action@v3
       with:
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: ${{ env.REGISTRY }}
