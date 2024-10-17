@@ -281,7 +281,7 @@ jobs:
         '
     - continue-on-error: true
       name: "\u21A9\uFE0F Create Pull Request"
-      uses: peter-evans/create-pull-request@v4
+      uses: peter-evans/create-pull-request@v7
       with:
         body: 'Updates [zsh-async][1] to ${{ steps.zsh-async.outputs.release_tag }}
 
